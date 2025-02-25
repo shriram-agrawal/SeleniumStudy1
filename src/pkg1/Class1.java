@@ -114,6 +114,14 @@ public class Class1 {
             System.out.println(i+" Iteration of For");
         }
 
+        //create a pyramid of stars
+        for (int i = 1; i <= 6; i++){
+            for (int j=1 ; j<=i ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
 
     }
 }
