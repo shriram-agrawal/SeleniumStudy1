@@ -1,5 +1,7 @@
 package pkg1;
 
+
+import javax.swing.*;
 import java.sql.SQLOutput;
 
 public class StringsBasics {
@@ -104,5 +106,40 @@ public class StringsBasics {
         for (String x : arr) {
             System.out.println(x);
         }
+
+        System.out.println(" ** -- Replace and Replace ALl -- **");
+        String str31 = "CONCENTRAT1234ON 1234MPROVES W1234TH PRACT1234CE";
+        String str32 = "1234";
+        String str33 = "I";
+
+        System.out.println(str31.replace("1234","I"));
+        System.out.println(str31.replace(str32,str33));
+
+        String str34 = "E#@I£$THER YO%^U D^&O I^&T O*(R I DO I#|T";
+        String str35 = "[^A-Za-z0-9\\s]";
+
+        System.out.println(str34.replaceAll(str35,""));
+
+        System.out.println(" **  __ Type Conversion for String __   ***");
+        int num10 = 100;
+
+        System.out.println(Integer.toString(num10));
+        System.out.println(Integer.toBinaryString(num10));
+        System.out.println(Integer.toHexString(num10));
+        System.out.println(Integer.toOctalString(num10));
+
+        String str36 = "100";
+        String str37 = "1100100";
+        String str38 = "64";
+        String str39 = "144";
+
+        System.out.println(Integer.parseInt(str36));
+        System.out.println(Integer.parseInt(str37,2));
+        System.out.println(Integer.parseInt(str38, 16));
+        System.out.println(Integer.parseInt(str39, 8));
+
+
+
+
     }
 }
