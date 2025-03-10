@@ -105,7 +105,7 @@ public class Class1 {
             num1 = num2;
             num2 = num3;
         }
-        */
+
         //nested for
         for (int i=1 ; i <=2 ; i++){
             for (int j = 1; j <=3 ; j++){
@@ -121,7 +121,20 @@ public class Class1 {
             }
             System.out.println();
         }
+        */
+    StringBuilder sb1 = new StringBuilder("This is a Test String");
+    StringBuilder sb2 = new StringBuilder("This is a Test String");
+        System.out.println(sb1);
+        sb1.append(" append means");
+        System.out.println(sb1);
+        sb1.append(" concat");
+        System.out.println(sb1);
 
+        System.out.println(sb1.compareTo(sb2));
+
+        sb1.insert(7, " NOT");
+        sb1.replace(7,10, "Replaced");
+        System.out.println(sb1);
 
     }
 }
